@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
-import image from'../logo.svg'
+// import image from'../logo.svg'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 

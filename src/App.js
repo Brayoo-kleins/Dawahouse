@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom'
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Signin from './Components/Signin';
 import Signup from './Components/Signup';
 import Addproduct from './Components/Addproduct';
