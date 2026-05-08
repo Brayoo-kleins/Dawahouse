@@ -11,6 +11,9 @@ import Mpesapayment from './Components/Mpesapayment';
 import Navbar from './Components/Navbar';
 import Homee from './Components/Homee';
 import Footer from './Components/Footer';
+import ViewCart from './Components/ViewCart';
+
+
 
 
 
@@ -28,10 +31,11 @@ function App() {
         <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Addproduct' element={<Addproduct/>}/>
         <Route path='/Getproduct' element={<Getproduct/>}/>
-        <Route path='/' element={<Homee/>}/>
+        <Route path='/' element={<Getproduct/>}/>
         <Route path='/Makepayment' element={<Mpesapayment/>}/>
+        <Route path="/cart" element={<ViewCart/>}/>
         <Route path='/Footer' element={<Footer/>}/>
-
+        
         
 
 
@@ -39,6 +43,7 @@ function App() {
 
         
       </Routes>
+      <Footer/>
 
 
     </div>

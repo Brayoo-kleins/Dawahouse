@@ -50,18 +50,31 @@ const Mpesapayment = () => {
         <img src={img_url + product.product_photo} alt={product.product_photo} />
         <p>product Name:{product.product_name}</p>
         <p className='text-warning'>{product.product_cost}</p>
-        {/* mpesa payment form */}
-        <form action="" onsubmit={handlesubmit}>
-          <label>phone number</label>
-          <input 
-          type="tel" 
-          placeholder='Enter phone number'
-          className='form-control'
-          onChange={(e)=>setPhone(e.target.value)}
-          
+         {/* phone number form */}
+        <form onSubmit={handlesubmit}>
+
+          <label className='mt-3'>
+            Phone Number
+          </label>
+
+          <input
+            type="tel"
+            placeholder='2547XXXXXXXX'
+            className='form-control'
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
           />
 
+          {/* submit button */}
+          <button
+            type='submit'
+            className='btn btn-dark mt-3 w-100'>
+          
+          </button>
+
           <button className='btn btn-dark'>Make payment</button>
+
 
         </form>
 

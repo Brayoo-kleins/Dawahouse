@@ -52,7 +52,241 @@
 
 }
 
+/* PAGE STYLING */
 
+.product-page{
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #031b34,
+        #0a3d62,
+        #1b4f72
+    );
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+/* TITLE SECTION */
+
+.main-title{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeDown 1s ease;
+}
+
+.subtitle{
+    color: #d6eaf8;
+    font-size: 1.1rem;
+    width: 60%;
+    margin: auto;
+    animation: fadeUp 1.2s ease;
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+    position: relative;
+    background: rgba(255,255,255,0.1);
+    
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 18px;
+    transition: 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* HOVER EFFECT */
+
+.product-card:hover{
+    transform:
+        translateY(-12px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.6);
+
+    border:
+        1px solid rgba(255,255,255,0.4);
+}
+
+/* IMAGE */
+
+.image-container{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.product-image{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+
+/* IMAGE HOVER ZOOM */
+
+.product-card:hover .product-image{
+    transform: scale(1.1);
+}
+
+/* PRODUCT TEXT */
+
+.product-name{
+    color: white;
+    font-weight: bold;
+    margin-top: 18px;
+    font-size: 1.4rem;
+}
+
+.product-description{
+    color: #eaf2f8;
+    margin-top: 10px;
+    line-height: 1.7;
+    min-height: 90px;
+    font-size: 0.95rem;
+}
+
+/* PRICE */
+
+.product-price{
+    color: #ffd700;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* BUTTONS */
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* ADD TO CART BUTTON */
+
+.cart-btn{
+    background: linear-gradient(
+        45deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/* BUY BUTTON */
+
+.buy-btn{
+    background: linear-gradient(
+        45deg,
+        #141e30,
+        #243b55
+    );
+
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/* BUTTON HOVER */
+
+.cart-btn:hover,
+.buy-btn:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* LOADING + ERROR */
+
+.loading-text{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.error-text{
+    color: #ff6b6b;
+    font-size: 1.1rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeDown{
+
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .subtitle{
+        width: 95%;
+    }
+
+    .product-description{
+        min-height: auto;
+    }
+}
+
+.carousel-image{
+  height: 400px;      /* reduce height */
+  object-fit: cover;  /* keeps image looking good */
+  border-radius: 10px;
+}
+
+.carousel-caption{
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav-link {
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #bbdefb !important;
+  transform: translateY(-2px);
+}
 
 
 
